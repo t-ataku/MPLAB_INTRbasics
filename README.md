@@ -7,3 +7,9 @@
 6. Enabling Weak Pullup in RD13 (SW). See detail in Curiosity Nano User Guide 5.2. Mechanical Switch
 7. Also select options in Interrupt on Change. Any is selected in this repository so that both rising and falling edge will generate interrupt.
 8. Register your interrupt handler with IO_SW_SetInterruptHandler(intr) defined in pins.c
+# POINTS
+Here were my time consumed points.
+* DON'T FORGET enabling internal pullup in RD13 otherwise pressing SW doesn't change anything for MCU.
+* No other setups were required other than selecting Interrupt on Change to generate interrupt. Every required setups were done by pins.c. Of course, registering the interrupt handler is your task.
+
+GOOD LUCK!
